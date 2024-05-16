@@ -5,8 +5,9 @@
   align-items: center;
   justify-content: center;
   transform: scale(0);
-  animation: inflateel 1s 2s forwards;
+  animation: inflateel 1s 3s forwards;
   z-index: 100;
+  padding: 2rem;
 
   /* background: red; */
 }
@@ -20,7 +21,7 @@
 
 .order-card {
   background: white;
-  padding: 2rem;
+  padding: 1rem;
   z-index: 100;
   position: relative;
   overflow: hidden;
@@ -43,7 +44,7 @@
   font-size: 1.5rem;
   text-shadow: 1px 1px 1px white;
   transform: scale(0);
-  animation: inflateel 1s 4s forwards;
+  animation: inflateel 1s 5s forwards;
 }
 
 .bday-header {
@@ -52,7 +53,7 @@
   top: 0;
   text-align: center;
   transform: translateY(-50rem);
-  animation: dropdown 1s 6s forwards;
+  animation: dropdown 1s 6.5s forwards;
   /* margin-top: 5rem; */
 }
 
