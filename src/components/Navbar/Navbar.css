@@ -1,0 +1,23 @@
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem;
+}
+
+.sb-icon,
+.burger-icon {
+  font-size: 2.75rem;
+  transform: scale(0);
+  animation: inflateel 0.5s var(--delay) forwards;
+}
+
+.sb-icon {
+  color: rgb(0, 155, 0);
+  --delay: 0.25s;
+}
+
+.burger-icon {
+  --delay: 0.5s;
+  cursor: pointer;
+}

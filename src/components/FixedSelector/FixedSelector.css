@@ -1,0 +1,58 @@
+.fixed-selector {
+  background: rgb(0, 55, 0);
+  position: absolute;
+  width: 100%;
+  padding: 2rem 4rem;
+  z-index: 10;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+}
+/* 
+.fixed-selector-content {
+  background: rgb(0, 55, 0);
+  width: 100%;
+  padding: 2rem 4rem;
+  position: relative;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+} */
+
+.faded {
+  opacity: 0.65rem;
+  font-weight: 300;
+}
+
+.select-form {
+  background: transparent;
+  padding: 0.5rem 0rem;
+  outline: none;
+  width: 200px;
+  color: white;
+  border: none;
+  font-size: 1.2rem;
+  border-bottom: 2px solid white;
+  position: relative;
+  z-index: 10;
+}
+
+.fixed-selector::after {
+  content: "";
+  width: 50px;
+  height: 50px;
+  background: rgb(0, 55, 0);
+  position: absolute;
+  top: -25px;
+  left: 42.5%;
+  transform: rotate(45deg);
+  z-index: 2;
+}
+
+.suitecase-icon {
+  color: white;
+  font-size: 3rem;
+}

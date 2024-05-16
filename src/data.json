@@ -1,0 +1,99 @@
+{
+  "items": [
+    {
+      "title": "Drinks",
+      "id": 1,
+      "items": [
+        {
+          "id": 1,
+          "title": "Hot Coffees",
+          "img": "https://globalassets.starbucks.com/digitalassets/products/bev/SBX20190617_CaffeAmericano.jpg?impolicy=1by1_tight_288"
+        },
+        {
+          "id": 2,
+          "title": "Cold Coffees",
+          "img": "https://globalassets.starbucks.com/digitalassets/products/bev/SBX20221130_WhiteChocolateMacadamiaColdBrew.jpg?impolicy=1by1_tight_288"
+        },
+        {
+          "id": 3,
+          "title": "Starbucks Refreshers® Beverages",
+          "img": "https://globalassets.starbucks.com/digitalassets/products/bev/SummerBerryRefreshersLemonade.jpg?impolicy=1by1_tight_288"
+        },
+        {
+          "id": 4,
+          "title": "Frappuccino® Blended Beverages",
+          "img": "https://globalassets.starbucks.com/digitalassets/products/bev/SBX20211210_MochaCookieCrumbleFrapp.jpg?impolicy=1by1_tight_288"
+        },
+        {
+          "id": 5,
+          "title": "Iced Tea and Lemonade",
+          "img": "https://globalassets.starbucks.com/digitalassets/products/bev/SBX20190531_IcedBlackTea.jpg?impolicy=1by1_tight_288"
+        },
+        {
+          "id": 6,
+          "title": "Hot Teas",
+          "img": "https://globalassets.starbucks.com/digitalassets/products/bev/SBX20220411_ChaiLatte.jpg?impolicy=1by1_tight_288"
+        },
+        {
+          "id": 7,
+          "title": "Milk, Juice & More",
+          "img": "https://globalassets.starbucks.com/digitalassets/products/bev/SBX20190617_SignatureHotChocolate.jpg?impolicy=1by1_tight_288"
+        },
+        {
+          "id": 8,
+          "title": "Bottled Beverages",
+          "img": "https://globalassets.starbucks.com/digitalassets/products/bev/SpindriftLemon.jpg?impolicy=1by1_tight_288"
+        }
+      ]
+    },
+    {
+      "title": "Food",
+      "id": 2,
+      "items": [
+        {
+          "id": 1,
+          "title": "Hot Breakfast",
+          "img": "https://globalassets.starbucks.com/digitalassets/products/food/SBX20220125_ChickenMapleButterSandwich.jpg?impolicy=1by1_tight_288"
+        },
+        {
+          "id": 2,
+          "title": "Oatmeal & Yogurt",
+          "img": "https://globalassets.starbucks.com/digitalassets/products/food/SBX20230321_Oatmeal_onGreen.jpg?impolicy=1by1_tight_288"
+        },
+        {
+          "id": 3,
+          "title": "Bakery",
+          "img": "https://globalassets.starbucks.com/digitalassets/products/food/SBX20190715_PlainBagel.jpg?impolicy=1by1_tight_288"
+        },
+        {
+          "id": 4,
+          "title": "Lunch",
+          "img": "https://globalassets.starbucks.com/digitalassets/products/food/SBX20220207_GrilledCheeseOnSourdough_US.jpg?impolicy=1by1_tight_288"
+        },
+        {
+          "id": 5,
+          "title": "Snacks & Sweets",
+          "img": "https://globalassets.starbucks.com/digitalassets/products/food/SBX20210825_MadeleineCakes.jpg?impolicy=1by1_tight_288"
+        }
+      ]
+    }
+  ],
+  "linkNames": [
+    {
+      "id": 1,
+      "linkName": "Menu"
+    },
+    {
+      "id": 2,
+      "linkName": "Featured"
+    },
+    {
+      "id": 3,
+      "linkName": "Previous"
+    },
+    {
+      "id": 4,
+      "linkName": "Favorites"
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+.menu-section {
+  padding: 1rem 2rem;
+}
+
+.line {
+  width: 100%;
+  height: 1.5px;
+  background: rgba(0, 0, 0, 0.65);
+  margin: 2rem 0;
+}
+
+.food-item {
+  margin: 2rem 0;
+  position: relative;
+  /* z-index: 5; */
+}
+
+.food-item-content {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.food-item-img-div {
+  height: 75px;
+  width: 75px;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+}
+
+.food-item-img-div::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  inset: 0;
+  background: rgb(0, 55, 0);
+}
+
+.food-item-img {
+  height: 200%;
+  width: 200%;
+  position: absolute;
+  left: -50%;
+  top: -50%;
+  z-index: 1;
+  transform: translateY(15vh);
+  animation: riseel 1s var(--delay) forwards;
+}
+
+.food-item-name {
+  filter: blur(20px);
+  animation: clearblur 1s var(--delay) forwards;
+  font-weight: 300;
+}
+
+@keyframes clearblur {
+  100% {
+    filter: blur(0px);
+  }
+}
+
+@keyframes riseel {
+  100% {
+    transform: translateY(0rem);
+  }
+}
