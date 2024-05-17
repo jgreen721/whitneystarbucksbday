@@ -26,6 +26,7 @@
   padding: 1rem;
   z-index: 100;
   position: relative;
+  transform: translateY(-2.5rem);
   /* overflow: hidden; */
   border-radius: 1rem;
   box-shadow: 2px 3px 3px rgba(15, 15, 15, 0.75),
