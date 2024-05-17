@@ -8,8 +8,10 @@
   animation: inflateel 1s 3s forwards;
   z-index: 100;
   padding: 2rem;
+}
 
-  /* background: red; */
+.show-order {
+  animation: inflateel 1s 3s forwards;
 }
 
 .order-card-overlay::after {
@@ -24,72 +26,18 @@
   padding: 1rem;
   z-index: 100;
   position: relative;
-  overflow: hidden;
+  /* overflow: hidden; */
   border-radius: 1rem;
+  /* width: clamp(45%, 450px, 90%); */
   box-shadow: 2px 3px 3px rgba(15, 15, 15, 0.75),
     3px 6px 15px rgba(20, 25, 20, 0.65);
 }
 
-.bday-modal {
-  position: absolute;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  z-index: 10;
-  background: linear-gradient(20deg, black, darkgreen);
-  inset: 0;
-  height: 100%;
-  width: 100%;
-  font-size: 1.5rem;
-  text-shadow: 1px 1px 1px white;
-  transform: scale(0);
-  animation: inflateel 1s 5s forwards;
+.order-for-row {
+  margin: 0.5rem 2rem;
 }
 
-.bday-header {
-  width: 100%;
-  position: absolute;
-  top: 0;
-  text-align: center;
-  transform: translateY(-50rem);
-  animation: dropdown 1s 6.5s forwards;
-  /* margin-top: 5rem; */
-}
-
-@keyframes dropdown {
-  100% {
-    transform: translateY(4rem);
-  }
-  100% {
-    transform: translateY(2rem);
-  }
-}
-
-.bday-modal h1 {
-  position: relative;
-  z-index: 15;
-}
-
-.family-img-div {
-  width: 85%;
-  height: 75%;
-  border-radius: 50%;
-  overflow: hidden;
-  position: absolute;
-  z-index: 10;
-  transform: scaleX(0);
-  animation: scaleegg 1s 5.5s forwards;
-}
-
-@keyframes scaleegg {
-  100% {
-    transform: scaleX(1);
-  }
-}
-
-.family-img {
-  height: 100%;
+table {
   width: 100%;
 }
 
@@ -102,7 +50,26 @@
 }
 
 td {
-  padding: 1rem 0;
+  padding: 1rem;
+  position: relative;
+  z-index: 5;
+}
+
+tr {
+  position: relative;
+}
+
+tr::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 50%;
+  background: gray;
+  inset: 0;
+  top: 25%;
+  opacity: 65%;
+  /* left: 15%; */
+  filter: blur(15px);
 }
 
 .food-img-div {
@@ -117,4 +84,14 @@ td {
   width: 100%;
   height: 100%;
   position: absolute;
+}
+
+.total-content-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.h4-total {
+  margin: 1rem 0;
 }

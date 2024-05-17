@@ -1,0 +1,65 @@
+.bday-modal {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  z-index: 10;
+  background: linear-gradient(20deg, black, darkgreen);
+  inset: 0;
+  height: 100%;
+  width: 100%;
+  font-size: 1.5rem;
+  text-shadow: 1px 1px 1px white;
+  transform: scale(0);
+}
+
+.show-bday {
+  animation: inflateel 1s 0.5s forwards;
+}
+
+.bday-header {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  text-align: center;
+  transform: translateY(-50rem);
+  animation: dropdown 1s 6.5s forwards;
+  /* margin-top: 5rem; */
+}
+
+@keyframes dropdown {
+  100% {
+    transform: translateY(4rem);
+  }
+  100% {
+    transform: translateY(2rem);
+  }
+}
+
+.bday-modal h1 {
+  position: relative;
+  z-index: 15;
+}
+
+.family-img-div {
+  width: 85%;
+  height: 75%;
+  border-radius: 50%;
+  overflow: hidden;
+  position: absolute;
+  z-index: 10;
+  transform: scaleX(0);
+  animation: scaleegg 1s 5.5s forwards;
+}
+
+@keyframes scaleegg {
+  100% {
+    transform: scaleX(1);
+  }
+}
+
+.family-img {
+  height: 100%;
+  width: 100%;
+}

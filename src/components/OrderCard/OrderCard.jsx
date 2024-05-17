@@ -1,5 +1,5 @@
-import React from 'react'
-import BdayModal from './BdayModal'
+import React, {useState} from 'react'
+import {BdayModal,FakeSelect} from './components'
 import "./OrderCard.css"
 
 const OrderCard = () => {
@@ -19,6 +19,13 @@ const OrderCard = () => {
              {id:6,name:"Chocolate Cake Pop",price:2.75,quantity:1,image:"https://globalassets.starbucks.com/digitalassets/products/food/SBX20181129_ChocolateCakePop.jpg?impolicy=1by1_tight_288"},
          ]
         }
+
+        const [showBday,setShowBday] = useState(false)
+
+
+        const toggleBday = ()=>{
+                setShowBday(true)
+        }
      
      
     
@@ -27,9 +34,11 @@ const OrderCard = () => {
         <div className="order-card">
             {/* <div className="order-card-content"> */}
             <h5>Order for:</h5>
+            <div className="order-for-row">
             {order.orderFor.map((person,idx)=>(
                 <span key={person.id}>{person.name}{idx < order.orderFor.length-1 && ","} </span>
-            ))}
+                ))}
+            </div>
             <table>
             <thead>
                 <tr>
@@ -43,27 +52,25 @@ const OrderCard = () => {
             {/* <ul className="order-items"> */}
                 <tbody className="order-items">
                 {order.foodOrder.map(foodItem=>(
-                    // <li className="food-order-item">
-                    //     <small>{foodItem.name.length < 20 ? foodItem.name : foodItem.name.slice(0,15) + "..."} </small>
-                    //     <small>{foodItem.quantity} </small>
-                    //     <small>{foodItem.price} </small>
-                    //     <small>{(parseFloat(foodItem.price) * parseFloat(foodItem.quantity)).toFixed(2)}</small>
-                    // </li>
+  
                     <tr key={foodItem.id}>
                         <td>
                         <div className="food-img-div"><img src={foodItem.image} alt="img"/></div>
                         </td>
-                        <td>{foodItem.name.length < 20 ? foodItem.name : foodItem.name.slice(0,15) + "..."}</td>
+                        <td>{foodItem.name.length < 20 ? foodItem.name : foodItem.name.slice(0,12) + "..."}</td>
                         <td>{foodItem.quantity}</td>
-                        <td>{foodItem.price}</td>
-                        <td>{(parseFloat(foodItem.price) * parseFloat(foodItem.quantity)).toFixed(2)}</td>
+                        <td>${foodItem.price}</td>
+                        <td>${(parseFloat(foodItem.price) * parseFloat(foodItem.quantity)).toFixed(2)}</td>
                     </tr>
                 ))}
                 </tbody>
             {/* </ul> */}
             </table>
-            <h4>Total:{order.foodOrder.reduce((total, item) => total + (parseFloat(item.price) * parseInt(item.quantity)), 0)}</h4>
-            <BdayModal/>
+            <div className="total-content-row">
+                <FakeSelect toggleBday={toggleBday} showBday={showBday}/>
+            <h4 className="h4-total">Total: ${order.foodOrder.reduce((total, item) => total + (parseFloat(item.price) * parseInt(item.quantity)), 0)}</h4>
+            </div>
+            <BdayModal showBday={showBday}/>
 
             </div>
 

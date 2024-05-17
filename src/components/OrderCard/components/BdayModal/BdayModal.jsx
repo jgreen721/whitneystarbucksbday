@@ -1,10 +1,10 @@
 import React from 'react'
 import Confetti from 'react-confetti'
+import "./BdayModal.css"
 
-
-const BdayModal = () => {
+const BdayModal = ({showBday}) => {
   return (
-    <div className="bday-modal">
+    <div className={showBday ? "bday-modal show-bday" : "bday-modal"}>
    
         <div className="family-img-div">
         <div className="bday-header">
