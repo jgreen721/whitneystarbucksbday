@@ -1,8 +1,11 @@
-import React, {useState} from 'react'
+import React, {useState, useRef} from 'react'
 import {BdayModal,FakeSelect} from './components'
+import {Fireworks} from "fireworks-js"
+
 import "./OrderCard.css"
 
 const OrderCard = () => {
+    const elRef = useRef();
     const order={
          orderFor:[
              {id:1,name:"Colin"},
@@ -25,12 +28,19 @@ const OrderCard = () => {
 
         const toggleBday = ()=>{
                 setShowBday(true)
+                const fireworks = new Fireworks(elRef.current)
+                setTimeout(()=>{
+                fireworks.start()
+                },2000);
         }
      
      
     
   return (
     <div className="order-card-overlay">
+
+                     <canvas style={{position:'absolute',inset:"0",width:'100%',height:"100%",zIndex:5}} ref={elRef}></canvas>
+
         <div className="order-card">
             {/* <div className="order-card-content"> */}
             <h5>Order for:</h5>
