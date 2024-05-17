@@ -33,10 +33,10 @@ const FakeSelect = ({toggleBday,showBday}) => {
 
 
     useEffect(()=>{
-        setTimeout(()=>{
-        let temp = counter;
-        handleCounter(temp);
-        },4500);
+        // setTimeout(()=>{
+        // let temp = counter;
+        // handleCounter(temp);
+        // },4500);
     },[])
 
 
